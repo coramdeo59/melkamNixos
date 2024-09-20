@@ -18,8 +18,7 @@
   pkgs.spotify
   pkgs.vlc
   pkgs.vscode
-  pkgs.jetbrains.idea-community
-  pkgs.cursor
+  pkgs.notion
   pkgs.slack
   pkgs.krita
   pkgs.qbittorrent
@@ -28,9 +27,9 @@
   pkgs.discord
   pkgs.chromium
   pkgs.gimp
+  pkgs.notion-app-enhanced
   pkgs.obsidian
   pkgs.gparted
-  pkgs.docker
 ];
 
   # Home Manager can also manage your environment variables.
