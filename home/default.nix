@@ -4,21 +4,21 @@
 , ...
 }: {
   imports = [
-#    ./nvim.nix
+#   ./nvim.nix
 
- #   ./gtk.nix
+    ./gtk.nix
 
 #    ./gh.nix
 #    ./gpg.nix
     ./git.nix
 #    ./pass.nix
-    ./sh.nix
+#    ./sh.nix
 #    ./helix.nix
 #    ./zathura.nix
 #    ./starship.nix
 
-#    ./players.nix
-#    ./browsers.nix
+    ./players.nix
+    ./browsers.nix
 #    ./terminals.nix
 
 #    ./dotfiles.nix
