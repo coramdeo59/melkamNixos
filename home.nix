@@ -15,10 +15,23 @@
 
   # The home.packages option allows you to install Nix packages into your environment.
   home.packages = [
-    pkgs.hello
-    pkgs.vscode    
-  ];
-  
+  pkgs.spotify
+  pkgs.vlc
+  pkgs.vscode
+  pkgs.jetbrains.idea-community
+  pkgs.cursor
+  pkgs.slack
+  pkgs.krita
+  pkgs.qbittorrent
+  pkgs.zoom-us
+  pkgs.brave
+  pkgs.discord
+  pkgs.chromium
+  pkgs.gimp
+  pkgs.obsidian
+  pkgs.gparted
+  pkgs.docker
+];
 
   # Home Manager can also manage your environment variables.
   home.sessionVariables = {
