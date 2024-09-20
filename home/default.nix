@@ -6,19 +6,19 @@
   imports = [
 #   ./nvim.nix
 
-    ./gtk.nix
+#    ./gtk.nix
 
 #    ./gh.nix
 #    ./gpg.nix
-    ./git.nix
+     ./git.nix
 #    ./pass.nix
-#    ./sh.nix
+    ./sh.nix
 #    ./helix.nix
 #    ./zathura.nix
 #    ./starship.nix
 
-    ./players.nix
-    ./browsers.nix
+#    ./players.nix
+#    ./browsers.nix
 #    ./terminals.nix
 
 #    ./dotfiles.nix
@@ -43,22 +43,7 @@
     username = "melkam";
     homeDirectory = "/home/melkam";
     packages = with pkgs; [
-      fd
-      feh
-      nil
-      nixd
-      zip
-      unzip
-      unrar
-      devenv
-      ffmpeg
-      bottom
-      ranger
-      neofetch
-      libreoffice
-      imagemagick
-      cool-retro-term
-      telegram-desktop
+      
 #      gnome-disk-utility
 #      transmission_4-gtk
 #      inputs.tuime.defaultPackage.${pkgs.system}
