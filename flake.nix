@@ -1,14 +1,15 @@
 {
-  description = "Flake of NixOS with Home Manager";
+  description = "NixOS Configuration with Home Manager";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";  # Adjust to your preferred version
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nix-software-center.url = "github:snowfallorg/nix-software-center";  # Ensure this is correct
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: let
-    system = "x86_64-linux";
+  outputs = { self, nixpkgs, ... }: let
+    system = "x86_64-linux";  # Adjust if necessary
     pkgs = nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations = {
@@ -16,19 +17,7 @@
         inherit system;
         modules = [
           ./configuration.nix
-          {
-            services.xserver.enable = true;
-            services.xserver.videoDrivers = [ "nvidia" ];
-            hardware.nvidia.modesetting.enable = true; # Optional for modesetting
-          }
         ];
-      };
-    };
-
-    homeConfigurations = {
-      melkam = home-manager.lib.homeManagerConfiguration {
-        pkgs = pkgs;
-        modules = [ ./home.nix ];
       };
     };
   };
