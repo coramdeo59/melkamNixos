@@ -107,6 +107,15 @@
     pinentry-gnome3
   ];
 
+
+  fileSystems."/mnt/Backup" = {
+    device = "/dev/disk/by-uuid/63b29fc2-602a-485f-81d4-a5ce5808365a"; # Use the UUID you found
+    fsType = "ext4"; # Make sure this matches your filesystem type
+    options = [ "defaults" ]; # You can customize options if needed
+  };
+  
+
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

@@ -18,7 +18,7 @@
 #    ./starship.nix
 
 #    ./players.nix
-#    ./browsers.nix
+     ./browsers.nix
 #    ./terminals.nix
 
 #    ./dotfiles.nix
